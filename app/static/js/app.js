@@ -45,7 +45,10 @@ Vue.component('news-list',{
         <h2>News</h2>
         <ul class="news__list">
             <li v-for="article in articles"
-                class="news__item">{{ article.title }}
+                class="news__item"> 
+                <img v-bind:src="article.urlToImage"/>
+                <label>{{article.title}}</label>
+                <p>{{article.description}}</p>
             </li>
         </ul>
     </div> `,
@@ -53,7 +56,7 @@ Vue.component('news-list',{
     {
         let self = this;
         
-        fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey= ')
+        fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=84a1a0fce67c4846b9edc21e8f0c4f8d')
             .then(function(response){  
                 return response.json();           
                 })           
