@@ -5,3 +5,31 @@ body {
 footer  {
     padding-top: 20px;
 }
+
+.grid-container {
+    display: grid;
+	grid-template-columns: repeat(4, 250px);
+	grid-gap: 10px;
+}
+
+
+.news-img{
+    width: 90%;
+    height: auto;
+}
+
+.news__item{
+    border-top: 3px blue solid;
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px gray;
+}
+
+p{
+    word-wrap: break-word;
+}
+h2{
+    text-align: center;
+}
+.form-group{
+    padding-top: 30px;
+}
