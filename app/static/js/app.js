@@ -76,7 +76,7 @@ const NewsList = Vue.component('news-list',{
     {
         let self = this;
         
-        fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=84a1a0fce67c4846b9edc21e8f0c4f8d')
+        fetch('https://newsapi.org/v2/top-headlines?country=us&apiKey=')
             .then(function(response){  
                 return response.json();           
                 })           
